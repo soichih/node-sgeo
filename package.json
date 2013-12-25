@@ -1,7 +1,7 @@
 {
   "name": "sgeo",
-  "version": "0.0.0",
-  "description": "Spherical geometry library for node",
+  "version": "0.0.1",
+  "description": "Spherical Geodesy representation conversion functions",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,8 +15,13 @@
     "spherical",
     "geometry"
   ],
-  "author": "Soichi Hayashi <soichih@gmail.com>",
-  "license": "MIT",
+  "author": {
+    "name": "Chris Veness"
+  },
+  "contributors": [
+    {"name": "Soichi Hayashi", "email": "soichih@gmail.com" }
+  ],
+  "license": "Creative Commons",
   "bugs": {
     "url": "https://github.com/soichih/node-sgeo/issues"
   },
