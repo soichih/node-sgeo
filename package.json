@@ -1,0 +1,24 @@
+{
+  "name": "sgeo",
+  "version": "0.0.0",
+  "description": "Spherical geometry library for node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/soichih/node-sgeo"
+  },
+  "keywords": [
+    "node",
+    "spherical",
+    "geometry"
+  ],
+  "author": "Soichi Hayashi <soichih@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/soichih/node-sgeo/issues"
+  },
+  "homepage": "https://github.com/soichih/node-sgeo"
+}
