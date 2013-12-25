@@ -1,5 +1,7 @@
 # Spherical coordinate library
-by Chris Veness 2002-2012
+
+This library let you compute distance, bearing, interpolations (mid points), and many others from a set of latitude / longitude pairs. 
+Oroginal code comes from http://www.movable-type.co.uk/scripts/latlong.html by Chris Veness 
 
 ## Installation
     npm install sgeo
