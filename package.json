@@ -1,7 +1,7 @@
 {
   "name": "sgeo",
-  "version": "0.0.1",
-  "description": "Spherical Geodesy representation conversion functions",
+  "version": "0.0.2",
+  "description": "Spherical coordinate library",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,9 +11,11 @@
     "url": "https://github.com/soichih/node-sgeo"
   },
   "keywords": [
-    "node",
+    "interpolation",
+    "latitude",
+    "longitude",
     "spherical",
-    "geometry"
+    "geodesy"
   ],
   "author": {
     "name": "Chris Veness"
