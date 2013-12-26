@@ -299,6 +299,42 @@ exports.latlon.prototype.midpointTo = function(point) {
     return new exports.latlon(lat3.toDeg(), lon3.toDeg());
 }
 
+exports.midpoint = function(points) {
+    var X = 0;
+    var Y = 0;
+    var Z = 0;
+
+    for(var i in points) {
+        var point = points[i];
+        //console.log(i);
+        //console.dir(point);
+        
+        var lat = point.lat * Math.PI / 180;
+        var lon = point.lng * Math.PI / 180;
+        //console.log("lat:"+lat);
+        //console.log("lon:"+lon);
+
+        var x = Math.cos(lat) * Math.cos(lon);
+        var y = Math.cos(lat) * Math.sin(lon);
+        var z = Math.sin(lat);
+        //console.log("x:"+x);
+
+        X += x;
+        Y += y;
+        Z += z;
+    }
+
+    X = X / points.length;
+    Y = Y / points.length;
+    Z = Z / points.length;
+
+    var Lon = Math.atan2(Y, X);
+    var Hyp = Math.sqrt(X * X + Y * Y);
+    var Lat = Math.atan2(Z, Hyp);
+
+    return new exports.latlon(Lat * 180 / Math.PI, Lon * 180 / Math.PI);
+}
+
 /*
 Returns list of latlon between this point and the supplied endpoint
 */

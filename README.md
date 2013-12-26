@@ -46,8 +46,8 @@ var sgeo = require('sgeo');
 var p1 = new sgeo.latlon(51.0, -5.5);
 var p2 = new sgeo.latlon(58.4778, -3.01);
 
-console.log(p1.lat()); //display latitude
-console.log(p1.lon()); //display longitude
+console.log(p1.lat); //display latitude
+console.log(p1.lng); //display longitude
 console.log(p1); //toString()
 ```
 
@@ -73,15 +73,22 @@ console.log(brng);
 9.871855132189069
 ```
 
-Calculate midpoints
+Calculate midpoint
 
 ```javascript
-var pm = p1.p1.midpointTo(p2);       
+var pm = p1.midpointTo(p2);       
 console.log(pm);
 ```
 
 ```
 { lat: 54.74522196955371, lng: -4.3700915168517 }
+```
+
+midpoint of multiple locations
+
+```javascript
+var pm = sgeo.migpoint([p1, p2, p3]);
+console.log(pm);
 ```
 
 Interpolate points between p1 and p2
