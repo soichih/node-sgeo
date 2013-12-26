@@ -1,7 +1,7 @@
 # Spherical coordinate library
 
-This library let you compute distance, bearing, interpolations (mid points), and many others from a set of latitude / longitude pairs. 
-Oroginal code comes from http://www.movable-type.co.uk/scripts/latlong.html by Chris Veness 
+This library lets you compute distance, bearing, interpolations (mid points), and many other functions from a set of latitude / longitude pairs. 
+Original code comes from http://www.movable-type.co.uk/scripts/latlong.html by Chris Veness 
 
 ## Installation
     npm install sgeo
@@ -114,7 +114,7 @@ will differ from the initial bearing by varying degrees according to distance an
 
 #### latlon.destinationPoint
 
-Returns the destination point from this point having travelled the given distance (in km) on the
+Returns the destination point from this point having traveled the given distance (in km) on the
 given initial bearing (bearing may vary before destination is reached)
 
 #### latlon.intersection
@@ -131,7 +131,7 @@ Returns the bearing from this point to the supplied point along a rhumb line, in
 
 #### latlon.rhumbDestinationPoint
 
-Returns the destination point from this point having travelled the given distance (in km) on the given bearing along a rhumb line
+Returns the destination point from this point having traveled the given distance (in km) on the given bearing along a rhumb line
 
 #### latlon.rhumbMidpointTo
 
