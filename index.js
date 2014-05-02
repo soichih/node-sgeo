@@ -189,7 +189,7 @@ exports.toBrng = function(deg, format, dp) {
 //radius of earth
 var radius = 6371;
 
-exports.latlon = function(lat, lon) {
+var latlon = exports.latlon = function(lat, lon) {
   // only accept numbers or valid numeric strings
   this.lat = typeof(lat)=='number' ? lat : typeof(lat)=='string' && lat.trim()!='' ? +lat : NaN;
   this.lng = typeof(lon)=='number' ? lon : typeof(lon)=='string' && lon.trim()!='' ? +lon : NaN;
