@@ -1,3 +1,4 @@
+'use strict';
 
 //Original version of this module came from following website by Chris Veness
 //http://www.movable-type.co.uk/scripts/latlong.html
